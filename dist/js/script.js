@@ -31,3 +31,27 @@ window.onscroll = function () {
     toTop.classList.add("hidden");
   }
 };
+
+// DarkMod Toggel
+const darkToggel = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggel.addEventListener("click", function () {
+  if (darkToggel.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  darkToggel.checked = true;
+} else {
+  darkToggel.checked = false;
+}
