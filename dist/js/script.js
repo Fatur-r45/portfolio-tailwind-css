@@ -55,3 +55,35 @@ if (
 } else {
   darkToggel.checked = false;
 }
+
+const dataGambar = [
+  {
+    title: "Membuat Portofolio",
+    img: "ssProject.png",
+    penjelasan:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+  },
+  {
+    title: "Mern-Blog",
+    img: "Home.png",
+    penjelasan:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+  },
+];
+const isiPortofolio = (data) => {
+  return `<div  class="mb-12 p-4 md:w-1/2" >
+      <div class="overflow-hidden rounded-md shadow-md">
+        <img src="dist/img/${data.img}" alt="Landing Page" width="w-full" class="object-cover" />
+      </div>
+      <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
+        ${data.title}
+      </h3>
+      <p class="text-base font-medium text-slate-500">
+        ${data.penjelasan}
+      </p>
+    </div>`;
+};
+const portofolio = document.querySelector("#gambar-portofolio");
+dataGambar.forEach((data) => {
+  return (portofolio.innerHTML += isiPortofolio(data));
+});
