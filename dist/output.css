@@ -867,6 +867,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: currentColor;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1230,9 +1235,9 @@ body {
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
-.dark .dark\:border-white {
+.dark .dark\:border-slate-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
 }
 
 .dark .dark\:bg-dark {
@@ -1268,6 +1273,11 @@ body {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .dark .dark\:shadow-slate-500 {
