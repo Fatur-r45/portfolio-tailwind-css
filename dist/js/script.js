@@ -83,7 +83,63 @@ const isiPortofolio = (data) => {
       </p>
     </div>`;
 };
+
 const portofolio = document.querySelector("#gambar-portofolio");
 dataGambar.forEach((data) => {
   return (portofolio.innerHTML += isiPortofolio(data));
+});
+
+const contentBlog = [
+  {
+    title: "Tips belajar programing",
+    img: "https://source.unsplash.com/360x200?programming",
+    penjelasan:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+  },
+  {
+    title: "Tips belajar basa pemerograman Python",
+    img: "https://source.unsplash.com/360x200?python+code",
+    penjelasan:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+  },
+  {
+    title: "Tips belajar bahasa javascript",
+    img: "https://source.unsplash.com/360x200?javascript",
+    penjelasan:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+  },
+];
+
+const isiBlog = (data) => {
+  return `<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+  <div
+    class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700"
+  >
+    <img
+      src="${data.img}"
+      alt="Programming"
+      class="h-[200px] w-full"
+    />
+    <div class="h-[200px] py-8 px-6">
+      <h3
+        class="mb-3 truncate text-xl font-semibold capitalize text-dark dark:text-white"
+      >
+        ${data.title}
+      </h3>
+      <p class="mb-6 truncate text-base font-medium text-slate-500">
+        ${data.penjelasan}
+      </p>
+      <a
+        href="#"
+        class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80"
+        >baca selengkapnya</a
+      >
+    </div>
+  </div>
+</div>`;
+};
+const dataBlog = document.querySelector("#data-blog");
+
+contentBlog.forEach((blog) => {
+  return (dataBlog.innerHTML += isiBlog(blog));
 });
