@@ -70,8 +70,8 @@ const dataGambar = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
   },
 ];
-const isiPortofolio = (data) => {
-  return `<div  class="mb-12 p-4 md:w-1/2" >
+const isiPortofolio = (data, count) => {
+  return `<div  class="mb-12 p-4 md:w-1/2" data-aos="flip-right" data-aos-delay="${count}">
       <div class="overflow-hidden rounded-md shadow-md">
         <img src="dist/img/${data.img}" alt="Landing Page" width="w-full" class="object-cover" />
       </div>
@@ -85,8 +85,9 @@ const isiPortofolio = (data) => {
 };
 
 const portofolio = document.querySelector("#gambar-portofolio");
-dataGambar.forEach((data) => {
-  return (portofolio.innerHTML += isiPortofolio(data));
+dataGambar.forEach((data, i) => {
+  i *= 200;
+  return (portofolio.innerHTML += isiPortofolio(data, i));
 });
 
 const contentBlog = [
@@ -110,10 +111,10 @@ const contentBlog = [
   },
 ];
 
-const isiBlog = (data) => {
+const isiBlog = (data, count) => {
   return `<div class="w-full px-4 lg:w-1/2 xl:w-1/3">
   <div
-    class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700"
+    class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-700 cursor-pointer" data-aos="zoom-in" data-aos-delay="${count}"
   >
     <img
       src="${data.img}"
@@ -140,6 +141,18 @@ const isiBlog = (data) => {
 };
 const dataBlog = document.querySelector("#data-blog");
 
-contentBlog.forEach((blog) => {
-  return (dataBlog.innerHTML += isiBlog(blog));
+contentBlog.forEach((blog, i) => {
+  i *= 400;
+  return (dataBlog.innerHTML += isiBlog(blog, i));
+});
+
+const skills = document.querySelectorAll("#my-skill div");
+skills.forEach((skill, i) => {
+  skill.dataset.aos = "flip-right";
+  skill.dataset.aosDelay = i * 200;
+});
+
+AOS.init({
+  once: false,
+  duration: 1000,
 });
