@@ -60,14 +60,25 @@ const dataGambar = [
   {
     title: "Membuat Portofolio",
     img: "ssProject.png",
-    penjelasan:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+    penjelasan: "project saya membuat portofolio menggunakan tailwind-css",
   },
   {
     title: "Mern-Blog",
     img: "Home.png",
     penjelasan:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam laborum expedita autem ipsa ratione dolor!",
+      "projek pertama saya membuat suatu web blog menggunakan MonggoDB, Express, React.js dan Node.js atau singkatan dari MERN",
+  },
+  {
+    title: "Genusian Smart WEB",
+    img: "GenusianSmart.png",
+    penjelasan:
+      "projek ini saya buat untuk menyelesaikan jenjang pendidikan s1 saya di Universitas Nusa Putra Sukabumi menggunakan React.js dan back endnya menggunakan Node.js dengan MYSQL sebagai Databasenya",
+  },
+  {
+    title: "Genusian Smart Mobile Apps",
+    img: "MobileApps.png",
+    penjelasan:
+      "projek ini sama sepertin yang webnya dengan backend yang sama juga, hanya saja projek ini saya buat dengan bentuk aplikasi mobile menggunakan flutter, dan gambar yang di atas ini adalah halaman dari bagian aplikasi Genusian Smart.",
   },
 ];
 const isiPortofolio = (data, count) => {
