@@ -76,7 +76,7 @@ const dataGambar = [
   },
   {
     title: "Genusian Smart Mobile Apps",
-    img: "MobileApps.png",
+    img: "mobileApps.png",
     penjelasan:
       "projek ini sama sepertin yang webnya dengan backend yang sama juga, hanya saja projek ini saya buat dengan bentuk aplikasi mobile menggunakan flutter, dan gambar yang di atas ini adalah halaman dari bagian aplikasi Genusian Smart.",
   },
