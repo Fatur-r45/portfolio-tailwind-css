@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="dist/css/final.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
       if (
@@ -17,12 +16,11 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
-    <title>Portofolio-Tailwind-Css</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Header Start -->
     <header
-      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
     >
       <div class="container">
         <div class="relative flex items-center justify-between">
@@ -51,7 +49,7 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+              class="max-w-[250px] absolute right-4 top-full hidden w-full rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
@@ -125,10 +123,10 @@
     </header>
     <!-- Header End -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 dark:bg-dark">
+    <section id="home" class="pt-36 dark:bg-dark w-full">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div class="lg:w-1/2 w-full self-center px-4">
             <h1
               class="text-base font-semibold text-primary md:text-xl"
               data-aos="fade-right"
@@ -160,23 +158,23 @@
             <a
               href="#contact"
               data-aos="fade-up"
-              class="relative z-10 rounded-full border-2 border-slate-900 bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-70 hover:shadow-lg dark:border-slate-500 md:static md:z-0"
+              class="relative z-10 rounded-full border-2 border-slate-900 bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-70 hover:shadow-lg dark:border-slate-500 md:static md:z-0"
               >Hubungi Saya</a
             >
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div class="lg:w-1/2 w-full self-end px-4">
             <div
               class="relative mt-10 lg:right-0 lg:mt-9"
               data-aos="flip-right"
               data-aos-duration="1000"
             >
               <img
-                src="dist/img/myPhoto.png"
+                src="img/myPhoto.png"
                 alt="Fatur Rahaman Gandi"
                 class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-x-125 lg:-translate-y-1/4"
+                class="lg:-translate-y-1/4 absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-x-125"
               >
                 <svg
                   width="400"
@@ -197,12 +195,11 @@
       </div>
     </section>
     <!-- Hero Section End -->
-
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex w-full flex-wrap">
-          <div class="mb-10 w-full px-4 lg:w-1/2" data-aos="fade-right">
+          <div class="lg:w-1/2 mb-10 w-full px-4" data-aos="fade-right">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               Tentang Saya
             </h4>
@@ -222,7 +219,7 @@
             </p>
           </div>
           <div
-            class="w-full px-4 lg:w-1/2"
+            class="lg:w-1/2 w-full px-4"
             data-aos="fade-left"
             data-aos-delay="500"
           >
@@ -322,7 +319,7 @@
     <!-- About Section End -->
 
     <!-- Portofolio Section Start -->
-    <section id="portofolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <section id="portofolio" class="bg-slate-100 pb-16 pt-36 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center" data-aos="fade-down">
@@ -339,7 +336,7 @@
           </div>
         </div>
         <div
-          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+          class="xl:w-10/12 flex w-full flex-wrap justify-center px-4 xl:mx-auto"
           id="gambar-portofolio"
         ></div>
       </div>
@@ -347,7 +344,7 @@
     <!-- Portofolio Section End -->
 
     <!-- My Skill Section Start -->
-    <section id="MySkill" class="bg-slate-700 pt-36 pb-32 dark:bg-slate-300">
+    <section id="MySkill" class="bg-slate-700 pb-32 pt-36 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center" data-aos="zoom-out">
@@ -367,29 +364,29 @@
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center" id="my-skill">
             <div
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
-              <img src="dist/img/client/CSS3_and_HTML5.svg" alt="HTML & CSS" />
+              <img src="img/client/CSS3_and_HTML5.svg" alt="HTML & CSS" />
             </div>
             <div
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
-              <img src="dist/img/client/Javascript.svg" alt="javascript" />
+              <img src="img/client/Javascript.svg" alt="javascript" />
             </div>
             <div
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
-              <img src="dist/img/client/Nodejs.svg" alt="Node.js" />
+              <img src="img/client/Nodejs.svg" alt="Node.js" />
             </div>
             <div
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
-              <img src="dist/img/client/react.png" alt="React.js" />
+              <img src="img/client/react.png" alt="React.js" />
             </div>
             <div
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="max-w-[200px] mx-4 py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
             >
-              <img src="dist/img/client/flutter.png" alt="Flutter" />
+              <img src="img/client/flutter.png" alt="Flutter" />
             </div>
           </div>
         </div>
@@ -398,7 +395,7 @@
     <!-- My skill Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="bg-slate-100 pt-36 pb-16 dark:bg-dark">
+    <section id="blog" class="bg-slate-100 pb-16 pt-36 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center" data-aos="fade-down">
@@ -420,7 +417,7 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
+    <section id="contact" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center" data-aos="zoom-in-up">
@@ -437,7 +434,7 @@
           </div>
         </div>
         <form>
-          <div class="w-full lg:mx-auto lg:w-2/3">
+          <div class="lg:w-2/3 w-full lg:mx-auto">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary"
                 >Nama</label
@@ -470,7 +467,7 @@
             </div>
             <div class="w-full px-4">
               <button
-                class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
+                class="w-full rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
               >
                 Kirim
               </button>
@@ -482,17 +479,17 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer id="footer" class="bg-dark pt-24 pb-12">
+    <footer id="footer" class="bg-dark pb-12 pt-24">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+          <div class="md:w-1/3 mb-12 w-full px-4 font-medium text-slate-300">
             <h2 class="mb-5 text-4xl font-bold text-white">Fatur</h2>
             <h3 class="mb-2 text-2xl font-bold">Hubungi Saya</h3>
             <p>faragi691@gmail.com</p>
             <p>KP. Pabuaran RT. 02/01 JL. Cireundeu</p>
             <p>Sukabumi</p>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="md:w-1/3 mb-12 w-full px-4">
             <h3 class="mb-5 text-xl font-semibold capitalize text-white">
               kategori tulisan
             </h3>
@@ -520,7 +517,7 @@
               </li>
             </ul>
           </div>
-          <div class="mb-12 w-full px-4 md:w-1/3">
+          <div class="md:w-1/3 mb-12 w-full px-4">
             <h3 class="mb-5 text-xl font-semibold capitalize text-white">
               tautan
             </h3>
@@ -667,10 +664,10 @@
       class="fixed bottom-4 right-4 hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
       id="to-top"
     >
-      <span class="mt-2 block h-5 w-5 -rotate-45 border-t-2 border-r-2"></span>
+      <span class="mt-2 block h-5 w-5 -rotate-45 border-r-2 border-t-2"></span>
     </a>
     <!-- Back To Top End -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="dist/js/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
