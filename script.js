@@ -84,7 +84,7 @@ const dataGambar = [
 const isiPortofolio = (data, count) => {
   return `<div  class="mb-12 p-4 md:w-1/2" data-aos="flip-right" data-aos-delay="${count}">
       <div class="overflow-hidden rounded-md shadow-md">
-        <img src="/src/img/${data.img}" alt="Landing Page" width="w-full" class="object-cover" />
+        <img src="./src/img/${data.img}" alt="Landing Page" width="w-full" class="object-cover" />
       </div>
       <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
         ${data.title}
